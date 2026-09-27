@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Trạm Green Land",
-  description: "Nơi giao lưu , mời bot & vui đừa",
+  title: "Aston Cloud - Dịch vụ Hosting",
+  description: "Thử tạo một hosting cho riêng mình . Có chống DDoS , Tường lửa và trải nghiệm được ưu tiên!",
 };
 
 export default function RootLayout({
