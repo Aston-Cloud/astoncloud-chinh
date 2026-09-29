@@ -335,7 +335,7 @@ export default function Home() {
 
               <div className="relative rounded-3xl border border-white/10 bg-white/[0.035] p-2 overflow-hidden shadow-2xl">
                 <img
-                  src="/panel/dashboard.jpg"
+                  src="dashboard.png"
                   alt="Aston Cloud Panel Dashboard"
                   width={1200}
                   height={750}
