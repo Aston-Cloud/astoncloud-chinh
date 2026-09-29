@@ -128,7 +128,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           {/* LOGO */}
           <div className="flex items-center gap-2 text-white font-bold text-lg">
-            <span className="animate-float">🌤️</span>
+            <img
+              src="/logoast.png"
+              alt="Aston Cloud"
+              className="w-8 h-8 object-contain animate-float"
+            />
+
             <span>Aston Cloud</span>
           </div>
 
@@ -248,13 +253,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =====================================================
-          HẠ TẦNG
-      ===================================================== */}
-      <section
-        id="hattang"
-        className="bg-black text-white py-24"
-      >
+      {/* HẠ TẦNG */}
+      <section id="hattang" className="bg-black text-white py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-2xl">
             <p className="text-yellow-400 font-semibold text-sm">
@@ -317,23 +317,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =====================================================
-          GIAO DIỆN PANEL
-      ===================================================== */}
+      {/* GIAO DIỆN PANEL */}
       <section
         id="panel-preview"
         className="relative bg-[#050505] text-white py-24 border-y border-white/[0.05]"
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
-
             {/* PANEL IMAGE */}
             <div className="relative">
               <div className="absolute -inset-8 bg-green-400/[0.035] blur-3xl rounded-full pointer-events-none" />
 
               <div className="relative rounded-3xl border border-white/10 bg-white/[0.035] p-2 overflow-hidden shadow-2xl">
                 <img
-                  src="dashboard.png"
+                  src="/dashboard.png"
                   alt="Aston Cloud Panel Dashboard"
                   width={1200}
                   height={750}
@@ -359,7 +356,6 @@ export default function Home() {
               </p>
 
               <div className="mt-8 space-y-4">
-
                 {/* FEATURE 1 */}
                 <div className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-green-400/20">
                   <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-green-400/10 flex items-center justify-center text-xl">
@@ -410,7 +406,6 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
               </div>
 
               <Link
@@ -424,9 +419,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =====================================================
-          CẤU HÌNH
-      ===================================================== */}
+      {/* CẤU HÌNH */}
       <section
         id="nodes"
         className="relative bg-[#050505] text-white py-24 border-b border-white/[0.05]"
@@ -448,12 +441,9 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-
             {/* STARTER */}
             <div className="card-hover gpu rounded-3xl border border-white/10 bg-white/[0.035] p-7">
-              <p className="text-white/40 text-sm">
-                STARTER
-              </p>
+              <p className="text-white/40 text-sm">STARTER</p>
 
               <h3 className="mt-2 text-2xl font-bold">
                 512 MB
@@ -462,32 +452,24 @@ export default function Home() {
               <div className="mt-7 space-y-4 text-white/50">
                 <div className="flex justify-between">
                   <span>CPU</span>
-                  <span className="text-white">
-                    1 vCPU
-                  </span>
+                  <span className="text-white">1 vCPU</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>RAM</span>
-                  <span className="text-white">
-                    512 MB
-                  </span>
+                  <span className="text-white">512 MB</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>Storage</span>
-                  <span className="text-white">
-                    10 GB
-                  </span>
+                  <span className="text-white">10 GB</span>
                 </div>
               </div>
             </div>
 
             {/* STANDARD */}
             <div className="card-hover gpu rounded-3xl border border-yellow-400/25 bg-yellow-400/[0.045] p-7">
-              <p className="text-yellow-400 text-sm">
-                STANDARD
-              </p>
+              <p className="text-yellow-400 text-sm">STANDARD</p>
 
               <h3 className="mt-2 text-2xl font-bold">
                 2 GB
@@ -496,23 +478,17 @@ export default function Home() {
               <div className="mt-7 space-y-4 text-white/50">
                 <div className="flex justify-between">
                   <span>CPU</span>
-                  <span className="text-white">
-                    2 vCPU
-                  </span>
+                  <span className="text-white">2 vCPU</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>RAM</span>
-                  <span className="text-white">
-                    2 GB
-                  </span>
+                  <span className="text-white">2 GB</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>Storage</span>
-                  <span className="text-white">
-                    30 GB
-                  </span>
+                  <span className="text-white">30 GB</span>
                 </div>
               </div>
             </div>
@@ -530,41 +506,31 @@ export default function Home() {
               <div className="mt-7 space-y-4 text-white/50">
                 <div className="flex justify-between">
                   <span>CPU</span>
-                  <span className="text-white">
-                    4 vCPU
-                  </span>
+                  <span className="text-white">4 vCPU</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>RAM</span>
-                  <span className="text-white">
-                    4 GB
-                  </span>
+                  <span className="text-white">4 GB</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>Storage</span>
-                  <span className="text-white">
-                    60 GB
-                  </span>
+                  <span className="text-white">60 GB</span>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          ABOUT
-      ===================================================== */}
+      {/* ABOUT */}
       <section
         id="about"
         className="relative bg-black text-white py-24"
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-
             <div>
               <p className="text-yellow-400 font-semibold text-sm">
                 VỀ CHÚNG TÔI
@@ -596,7 +562,6 @@ export default function Home() {
 
             <div className="card-hover gpu rounded-[2rem] bg-white/[0.035] border border-white/10 p-8">
               <div className="grid grid-cols-2 gap-5">
-
                 <div className="rounded-2xl bg-white/[0.035] p-6">
                   <div className="text-3xl font-bold">
                     24/7
@@ -636,23 +601,18 @@ export default function Home() {
                     Dễ quản lý
                   </p>
                 </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          BẢNG GIÁ
-      ===================================================== */}
+      {/* BẢNG GIÁ */}
       <section
         id="prides"
         className="relative bg-[#030303] text-white py-24 border-t border-white/[0.05]"
       >
         <div className="max-w-7xl mx-auto px-6">
-
           <div className="text-center max-w-2xl mx-auto">
             <p className="text-yellow-400 font-semibold text-sm">
               BẢNG GIÁ
@@ -668,10 +628,8 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
-
             {/* FREE */}
             <div className="card-hover gpu rounded-3xl border border-green-400/20 bg-green-400/[0.035] p-7">
-
               <span className="inline-flex rounded-full bg-green-400/10 text-green-400 px-3 py-1 text-xs font-bold">
                 FREE
               </span>
@@ -709,12 +667,10 @@ export default function Home() {
               >
                 Bắt đầu miễn phí
               </Link>
-
             </div>
 
             {/* BASIC */}
             <div className="card-hover gpu rounded-3xl border border-white/10 bg-white/[0.035] p-7">
-
               <h3 className="text-2xl font-bold">
                 Basic
               </h3>
@@ -748,12 +704,10 @@ export default function Home() {
               >
                 Chọn Basic
               </Link>
-
             </div>
 
             {/* PRO */}
             <div className="card-hover gpu relative rounded-3xl border border-yellow-400/25 bg-yellow-400/[0.05] text-white p-7">
-
               <div className="absolute -top-3 left-6">
                 <span className="rounded-full bg-yellow-400 text-black px-4 py-1.5 text-xs font-bold">
                   PHỔ BIẾN
@@ -793,12 +747,10 @@ export default function Home() {
               >
                 Chọn Pro
               </Link>
-
             </div>
 
             {/* BUSINESS */}
             <div className="card-hover gpu rounded-3xl border border-white/10 bg-white/[0.035] p-7">
-
               <h3 className="text-2xl font-bold">
                 Business
               </h3>
@@ -832,21 +784,15 @@ export default function Home() {
               >
                 Chọn Business
               </Link>
-
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          CTA
-      ===================================================== */}
+      {/* CTA */}
       <section className="bg-black text-white py-24">
         <div className="max-w-5xl mx-auto px-6">
-
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.035] px-8 py-14 md:px-16 text-center">
-
             <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-64 bg-yellow-400/10 blur-3xl pointer-events-none" />
 
             <div className="relative z-10">
@@ -865,24 +811,23 @@ export default function Home() {
                 Tạo server ngay →
               </Link>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          FOOTER
-      ===================================================== */}
+      {/* FOOTER */}
       <footer className="bg-black text-white border-t border-white/[0.06]">
-
         <div className="max-w-7xl mx-auto px-6 py-12">
-
           <div className="grid md:grid-cols-5 gap-10">
-
             {/* BRAND */}
             <div>
               <div className="flex items-center gap-2 font-bold text-lg">
-                <span>🌤️</span>
+                <img
+                  src="/logoast.png"
+                  alt="Aston Cloud"
+                  className="w-8 h-8 object-contain"
+                />
+
                 <span>Aston Cloud</span>
               </div>
 
@@ -902,7 +847,6 @@ export default function Home() {
               </h3>
 
               <div className="mt-4 space-y-3 text-sm text-white/40">
-
                 <Link
                   href="/panel"
                   className="block hover:text-white transition"
@@ -923,7 +867,6 @@ export default function Home() {
                 >
                   Bảng giá
                 </Link>
-
               </div>
             </div>
 
@@ -934,7 +877,6 @@ export default function Home() {
               </h3>
 
               <div className="mt-4 space-y-3 text-sm text-white/40">
-
                 <Link
                   href="#about"
                   className="block hover:text-white transition"
@@ -955,7 +897,6 @@ export default function Home() {
                 >
                   Panel
                 </Link>
-
               </div>
             </div>
 
@@ -966,7 +907,6 @@ export default function Home() {
               </h3>
 
               <div className="mt-4 space-y-3 text-sm text-white/40">
-
                 <Link
                   href="/terms"
                   className="block hover:text-white transition"
@@ -994,7 +934,6 @@ export default function Home() {
                 >
                   Chính sách hoàn tiền
                 </Link>
-
               </div>
             </div>
 
@@ -1016,15 +955,12 @@ export default function Home() {
                 Vào Dashboard
               </Link>
             </div>
-
           </div>
 
           <div className="mt-12 pt-6 border-t border-white/10 text-center text-sm text-white/25">
             © {new Date().getFullYear()} Aston Cloud. All rights reserved.
           </div>
-
         </div>
-
       </footer>
     </main>
   );
