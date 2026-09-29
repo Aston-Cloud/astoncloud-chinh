@@ -250,7 +250,6 @@ export default function Home() {
 
       {/* =====================================================
           HẠ TẦNG
-          GIỮ NGUYÊN NỘI DUNG
       ===================================================== */}
       <section
         id="hattang"
@@ -320,7 +319,6 @@ export default function Home() {
 
       {/* =====================================================
           GIAO DIỆN PANEL
-          THÊM NGAY SAU HẠ TẦNG
       ===================================================== */}
       <section
         id="panel-preview"
@@ -587,6 +585,13 @@ export default function Home() {
                 Khi dự án phát triển, bạn có thể nâng cấp tài nguyên
                 để đáp ứng nhu cầu mới.
               </p>
+
+              <Link
+                href="/abouts"
+                className="inline-flex mt-8 bg-white/[0.06] border border-white/10 hover:bg-white/[0.1] text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-1"
+              >
+                Tìm hiểu thêm →
+              </Link>
             </div>
 
             <div className="card-hover gpu rounded-[2rem] bg-white/[0.035] border border-white/10 p-8">
@@ -872,7 +877,7 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-6 py-12">
 
-          <div className="grid md:grid-cols-4 gap-10">
+          <div className="grid md:grid-cols-5 gap-10">
 
             {/* BRAND */}
             <div>
@@ -883,6 +888,10 @@ export default function Home() {
 
               <p className="mt-4 text-white/35 text-sm leading-6">
                 Hosting & VPS đơn giản, linh hoạt cho mọi dự án.
+              </p>
+
+              <p className="mt-3 text-white/25 text-xs leading-5">
+                Aston Cloud sở hữu và vận hành astcloud.ddns.net.
               </p>
             </div>
 
@@ -945,6 +954,45 @@ export default function Home() {
                   className="block hover:text-white transition"
                 >
                   Panel
+                </Link>
+
+              </div>
+            </div>
+
+            {/* LEGAL */}
+            <div>
+              <h3 className="font-semibold">
+                Chính sách
+              </h3>
+
+              <div className="mt-4 space-y-3 text-sm text-white/40">
+
+                <Link
+                  href="/terms"
+                  className="block hover:text-white transition"
+                >
+                  Điều khoản sử dụng
+                </Link>
+
+                <Link
+                  href="/privacy"
+                  className="block hover:text-white transition"
+                >
+                  Quyền riêng tư
+                </Link>
+
+                <Link
+                  href="/cookie"
+                  className="block hover:text-white transition"
+                >
+                  Chính sách cookie
+                </Link>
+
+                <Link
+                  href="/refund"
+                  className="block hover:text-white transition"
+                >
+                  Chính sách hoàn tiền
                 </Link>
 
               </div>
