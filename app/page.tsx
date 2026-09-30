@@ -151,7 +151,7 @@ export default function Home() {
           {/* LOGO */}
           <div className="flex items-center gap-2 text-white font-bold text-lg">
             <img
-              src="/logoastcloud1.png"
+              src="/logoastoncloud1.png"
               alt="Aston Cloud"
               className="w-8 h-8 object-contain"
             />
@@ -845,7 +845,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 font-bold text-lg">
                 <img
-                  src="/logoastcloud1.png"
+                  src="/logoastoncloud1.png"
                   alt="Aston Cloud"
                   className="w-8 h-8 object-contain"
                 />
