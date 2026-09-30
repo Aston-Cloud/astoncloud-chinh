@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-yellow-400 selection:text-black">
+    <main className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-pink-400 selection:text-black">
       {/* GLOBAL ANIMATION */}
       <style jsx global>{`
         html {
@@ -90,6 +90,28 @@ export default function Home() {
           backface-visibility: hidden;
         }
 
+        .pink-gradient-text {
+          background: linear-gradient(135deg, #ff4fa3 0%, #ff8bc8 45%, #ffffff 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+        }
+
+        .pink-gradient-btn {
+          background: linear-gradient(135deg, #ff3f9f 0%, #ff76bd 48%, #ffffff 100%);
+          color: #160812;
+          box-shadow: 0 8px 28px rgba(255, 79, 163, 0.18);
+        }
+
+        .pink-gradient-btn:hover {
+          background: linear-gradient(135deg, #ff68b4 0%, #ff9bd0 48%, #ffffff 100%);
+          box-shadow: 0 12px 34px rgba(255, 79, 163, 0.28);
+        }
+
+        .pink-gradient-border {
+          border-color: rgba(255, 105, 180, 0.28);
+        }
+
         .card-hover {
           transition:
             transform 220ms ease,
@@ -129,12 +151,12 @@ export default function Home() {
           {/* LOGO */}
           <div className="flex items-center gap-2 text-white font-bold text-lg">
             <img
-              src="/logoast.png"
+              src="/logoastcloud1.png"
               alt="Aston Cloud"
-              className="w-8 h-8 object-contain animate-float"
+              className="w-8 h-8 object-contain"
             />
 
-            <span>Aston Cloud</span>
+            <span className="pink-gradient-text">Aston Cloud</span>
           </div>
 
           {/* MENU */}
@@ -193,7 +215,7 @@ export default function Home() {
 
             <Link
               href="/panel"
-              className="bg-green-500 hover:bg-green-400 text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+              className="pink-gradient-btn font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:-translate-y-0.5"
             >
               Đăng ký
             </Link>
@@ -210,21 +232,21 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black/75" />
 
-        <div className="absolute top-20 left-1/4 w-72 h-72 rounded-full bg-green-500/10 blur-3xl animate-glow pointer-events-none" />
+        <div className="absolute top-20 left-1/4 w-72 h-72 rounded-full bg-pink-500/10 blur-3xl animate-glow pointer-events-none" />
 
-        <div className="absolute bottom-10 right-1/4 w-64 h-64 rounded-full bg-yellow-400/5 blur-3xl animate-glow pointer-events-none" />
+        <div className="absolute bottom-10 right-1/4 w-64 h-64 rounded-full bg-pink-400/5 blur-3xl animate-glow pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-2xl animate-fade-up">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-white/10 bg-white/[0.04] text-white/70 text-sm">
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-pink-400 animate-pulse" />
               Aston Cloud
             </div>
 
             <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
               Thử tạo một
               <br />
-              <span className="text-yellow-400">
+              <span className="pink-gradient-text">
                 Hosting & VPS dễ dàng!
               </span>
             </h1>
@@ -237,7 +259,7 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/panel"
-                className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-1"
+                className="pink-gradient-btn font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:-translate-y-1"
               >
                 Tạo server ngay →
               </Link>
@@ -257,7 +279,7 @@ export default function Home() {
       <section id="hattang" className="bg-black text-white py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-2xl">
-            <p className="text-yellow-400 font-semibold text-sm">
+            <p className="pink-gradient-text font-semibold text-sm">
               HẠ TẦNG
             </p>
 
@@ -274,7 +296,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             {/* CARD 1 */}
-            <div className="card-hover gpu rounded-3xl border border-white/10 bg-white/[0.035] p-7 hover:border-green-400/30">
+            <div className="card-hover gpu rounded-3xl border border-white/10 bg-white/[0.035] p-7 hover:border-pink-400/30">
               <div className="text-3xl">🌏</div>
 
               <h3 className="mt-5 text-xl font-bold">
@@ -288,7 +310,7 @@ export default function Home() {
             </div>
 
             {/* CARD 2 */}
-            <div className="card-hover gpu rounded-3xl border border-white/10 bg-white/[0.035] p-7 hover:border-yellow-400/30">
+            <div className="card-hover gpu rounded-3xl border border-white/10 bg-white/[0.035] p-7 hover:border-pink-400/30">
               <div className="text-3xl">⚡</div>
 
               <h3 className="mt-5 text-xl font-bold">
@@ -326,7 +348,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             {/* PANEL IMAGE */}
             <div className="relative">
-              <div className="absolute -inset-8 bg-green-400/[0.035] blur-3xl rounded-full pointer-events-none" />
+              <div className="absolute -inset-8 bg-pink-400/[0.035] blur-3xl rounded-full pointer-events-none" />
 
               <div className="relative rounded-3xl border border-white/10 bg-white/[0.035] p-2 overflow-hidden shadow-2xl">
                 <img
@@ -342,7 +364,7 @@ export default function Home() {
 
             {/* PANEL INFO */}
             <div className="animate-fade-up">
-              <p className="text-yellow-400 font-semibold text-sm">
+              <p className="pink-gradient-text font-semibold text-sm">
                 GIAO DIỆN PANEL
               </p>
 
@@ -357,8 +379,8 @@ export default function Home() {
 
               <div className="mt-8 space-y-4">
                 {/* FEATURE 1 */}
-                <div className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-green-400/20">
-                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-green-400/10 flex items-center justify-center text-xl">
+                <div className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-pink-400/20">
+                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-pink-400/10 flex items-center justify-center text-xl">
                     🖥️
                   </div>
 
@@ -374,8 +396,8 @@ export default function Home() {
                 </div>
 
                 {/* FEATURE 2 */}
-                <div className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-yellow-400/20">
-                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-yellow-400/10 flex items-center justify-center text-xl">
+                <div className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-pink-400/20">
+                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-pink-400/10 flex items-center justify-center text-xl">
                     ⚡
                   </div>
 
@@ -391,8 +413,8 @@ export default function Home() {
                 </div>
 
                 {/* FEATURE 3 */}
-                <div className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-blue-400/20">
-                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-blue-400/10 flex items-center justify-center text-xl">
+                <div className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-pink-400/20">
+                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-pink-400/10 flex items-center justify-center text-xl">
                     📊
                   </div>
 
@@ -410,7 +432,7 @@ export default function Home() {
 
               <Link
                 href="/panel"
-                className="inline-flex mt-8 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:-translate-y-1"
+                className="inline-flex mt-8 pink-gradient-btn font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:-translate-y-1"
               >
                 Mở Panel →
               </Link>
@@ -426,7 +448,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-2xl">
-            <p className="text-yellow-400 font-semibold text-sm">
+            <p className="pink-gradient-text font-semibold text-sm">
               CẤU HÌNH
             </p>
 
@@ -468,8 +490,8 @@ export default function Home() {
             </div>
 
             {/* STANDARD */}
-            <div className="card-hover gpu rounded-3xl border border-yellow-400/25 bg-yellow-400/[0.045] p-7">
-              <p className="text-yellow-400 text-sm">STANDARD</p>
+            <div className="card-hover gpu rounded-3xl border border-pink-400/25 bg-pink-400/[0.045] p-7">
+              <p className="pink-gradient-text text-sm">STANDARD</p>
 
               <h3 className="mt-2 text-2xl font-bold">
                 2 GB
@@ -532,7 +554,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-yellow-400 font-semibold text-sm">
+              <p className="pink-gradient-text font-semibold text-sm">
                 VỀ CHÚNG TÔI
               </p>
 
@@ -614,7 +636,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto">
-            <p className="text-yellow-400 font-semibold text-sm">
+            <p className="pink-gradient-text font-semibold text-sm">
               BẢNG GIÁ
             </p>
 
@@ -629,8 +651,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
             {/* FREE */}
-            <div className="card-hover gpu rounded-3xl border border-green-400/20 bg-green-400/[0.035] p-7">
-              <span className="inline-flex rounded-full bg-green-400/10 text-green-400 px-3 py-1 text-xs font-bold">
+            <div className="card-hover gpu rounded-3xl border border-green-400/20 bg-pink-400/[0.035] p-7">
+              <span className="inline-flex rounded-full bg-pink-400/10 pink-gradient-text px-3 py-1 text-xs font-bold">
                 FREE
               </span>
 
@@ -663,7 +685,7 @@ export default function Home() {
 
               <Link
                 href="/panel"
-                className="mt-8 block text-center rounded-full bg-green-500 hover:bg-green-400 text-white py-3 font-semibold transition-all duration-200 hover:-translate-y-1"
+                className="mt-8 block text-center rounded-full pink-gradient-btn py-3 font-semibold transition-all duration-200 hover:-translate-y-1"
               >
                 Bắt đầu miễn phí
               </Link>
@@ -707,9 +729,9 @@ export default function Home() {
             </div>
 
             {/* PRO */}
-            <div className="card-hover gpu relative rounded-3xl border border-yellow-400/25 bg-yellow-400/[0.05] text-white p-7">
+            <div className="card-hover gpu relative rounded-3xl border border-pink-400/25 bg-pink-400/[0.05] text-white p-7">
               <div className="absolute -top-3 left-6">
-                <span className="rounded-full bg-yellow-400 text-black px-4 py-1.5 text-xs font-bold">
+                <span className="rounded-full pink-gradient-btn px-4 py-1.5 text-xs font-bold">
                   PHỔ BIẾN
                 </span>
               </div>
@@ -743,7 +765,7 @@ export default function Home() {
 
               <Link
                 href="/panel"
-                className="mt-8 block text-center rounded-full bg-yellow-400 hover:bg-yellow-300 text-black py-3 font-semibold transition-all duration-200 hover:-translate-y-1"
+                className="mt-8 block text-center rounded-full pink-gradient-btn py-3 font-semibold transition-all duration-200 hover:-translate-y-1"
               >
                 Chọn Pro
               </Link>
@@ -793,7 +815,7 @@ export default function Home() {
       <section className="bg-black text-white py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.035] px-8 py-14 md:px-16 text-center">
-            <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-64 bg-yellow-400/10 blur-3xl pointer-events-none" />
+            <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-64 bg-pink-400/10 blur-3xl pointer-events-none" />
 
             <div className="relative z-10">
               <h2 className="text-3xl md:text-5xl font-bold">
@@ -806,7 +828,7 @@ export default function Home() {
 
               <Link
                 href="/panel"
-                className="inline-flex mt-8 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:-translate-y-1"
+                className="inline-flex mt-8 pink-gradient-btn font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:-translate-y-1"
               >
                 Tạo server ngay →
               </Link>
@@ -823,12 +845,12 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 font-bold text-lg">
                 <img
-                  src="/logoast.png"
+                  src="/logoastcloud1.png"
                   alt="Aston Cloud"
                   className="w-8 h-8 object-contain"
                 />
 
-                <span>Aston Cloud</span>
+                <span className="pink-gradient-text">Aston Cloud</span>
               </div>
 
               <p className="mt-4 text-white/35 text-sm leading-6">
@@ -950,7 +972,7 @@ export default function Home() {
 
               <Link
                 href="/panel"
-                className="inline-flex mt-5 bg-yellow-400 hover:bg-yellow-300 text-black px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5"
+                className="inline-flex mt-5 pink-gradient-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5"
               >
                 Vào Dashboard
               </Link>
