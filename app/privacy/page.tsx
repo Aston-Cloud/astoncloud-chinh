@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
   title: "Chính sách quyền riêng tư - Aston Cloud",
@@ -88,27 +89,14 @@ const sections: Section[] = [
 ];
 
 const link =
-  "rounded text-sky-700 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 dark:text-sky-300";
+  "rounded text-pink-700 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600 dark:text-pink-300";
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-slate-50 leading-relaxed text-slate-800 dark:bg-slate-950 dark:text-slate-200">
-      <nav
-        aria-label="Điều hướng"
-        className="mx-auto flex max-w-2xl items-center justify-between px-5 pt-6"
-      >
-        <Link
-          href="/"
-          className="rounded font-bold hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
-        >
-          🌤️ Aston Cloud
-        </Link>
-        <Link href="/" className={`text-sm ${link}`}>
-          ← Về trang chủ
-        </Link>
-      </nav>
+    <div className="min-h-screen bg-pink-50 leading-relaxed text-slate-800 dark:bg-slate-950 dark:text-slate-200">
+      <Navbar variant="policy" />
 
-      <main className="mx-auto max-w-2xl px-5 pb-16 pt-10">
+      <main className="mx-auto max-w-2xl px-5 pb-16 pt-28">
         <h1 className="mb-2 text-3xl font-bold leading-tight sm:text-4xl">
           Chính sách quyền riêng tư
         </h1>
@@ -124,7 +112,7 @@ export default function PrivacyPage() {
           .
         </p>
 
-        <div className="divide-y divide-slate-200 rounded-xl border border-slate-200 bg-white px-4 sm:px-6 dark:divide-slate-800 dark:border-slate-800 dark:bg-slate-900">
+        <div className="divide-y divide-pink-100 rounded-xl border border-pink-200 bg-white px-4 shadow-sm sm:px-6 dark:divide-pink-950 dark:border-pink-900 dark:bg-slate-900">
           {sections.map((s, i) => (
             <section key={s.title} aria-labelledby={`p-${i}`} className="py-5">
               <h2 id={`p-${i}`} className="mb-2 text-lg font-semibold">

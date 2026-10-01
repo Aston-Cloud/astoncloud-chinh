@@ -161,12 +161,6 @@ export default function Home() {
 
           {/* MENU */}
           <div className="hidden md:flex items-center gap-8 text-white/70 text-sm font-medium">
-            <Link
-              href="/panel"
-              className="hover:text-white transition-colors"
-            >
-              Dashboard
-            </Link>
 
             <Link
               href="#hattang"
@@ -214,7 +208,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/panel"
+              href="/panel/registers"
               className="pink-gradient-btn font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:-translate-y-0.5"
             >
               Đăng ký
@@ -227,7 +221,7 @@ export default function Home() {
       <section
         className="relative min-h-[680px] flex items-center bg-black bg-cover bg-center"
         style={{
-          backgroundImage: "url('/hero.jpg')",
+          backgroundImage: "url('/heros.png')",
         }}
       >
         <div className="absolute inset-0 bg-black/75" />
@@ -253,7 +247,7 @@ export default function Home() {
 
             <p className="mt-6 text-white/70 text-lg">
               Server đặt ở Việt Nam và ở nước ngoài, tốc độ trải nghiệm tối
-              đa!
+              đa. Triển khai máy chủ trong 40 giây!
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
