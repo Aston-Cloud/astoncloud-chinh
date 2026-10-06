@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-pink-400 selection:text-black">
+    <main className="min-h-screen overflow-x-hidden bg-black text-white selection:bg-yellow-400 selection:text-black">
       {/* GLOBAL ANIMATION */}
       <style jsx global>{`
         html {
@@ -151,7 +151,7 @@ export default function Home() {
           {/* LOGO */}
           <div className="flex items-center gap-2 text-white font-bold text-lg">
             <img
-              src="/logoastoncloud1.png"
+              src="/logoastbl.png"
               alt="Aston Cloud"
               className="w-8 h-8 object-contain"
             />
@@ -234,13 +234,13 @@ export default function Home() {
           <div className="max-w-2xl animate-fade-up">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-white/10 bg-white/[0.04] text-white/70 text-sm">
               <span className="w-2 h-2 rounded-full bg-pink-400 animate-pulse" />
-              Aston Cloud
+              Tốc độ siêu nhanh
             </div>
 
             <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
               Thử tạo một
               <br />
-              <span className="pink-gradient-text">
+              <span className="yellow-gradient-text">
                 Hosting & VPS dễ dàng!
               </span>
             </h1>
