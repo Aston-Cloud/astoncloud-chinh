@@ -91,21 +91,21 @@ export default function Home() {
         }
 
         .pink-gradient-text {
-          background: linear-gradient(135deg, #ff4fa3 0%, #ff8bc8 45%, #ffffff 100%);
+          background: linear-gradient(135deg, #f7d77b 0%, #f3b66d 35%, #f3a584 100%);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
         }
 
         .pink-gradient-btn {
-          background: linear-gradient(135deg, #ff3f9f 0%, #ff76bd 48%, #ffffff 100%);
-          color: #160812;
-          box-shadow: 0 8px 28px rgba(255, 79, 163, 0.18);
+          background: linear-gradient(135deg, #f7d77b 0%, #f3b66d 48%, #f4a17d 100%);
+          color: #1b1208;
+          box-shadow: 0 8px 28px rgba(246, 178, 72, 0.2);
         }
 
         .pink-gradient-btn:hover {
-          background: linear-gradient(135deg, #ff68b4 0%, #ff9bd0 48%, #ffffff 100%);
-          box-shadow: 0 12px 34px rgba(255, 79, 163, 0.28);
+          background: linear-gradient(135deg, #fde59a 0%, #f7c87b 48%, #f5b497 100%);
+          box-shadow: 0 12px 34px rgba(246, 178, 72, 0.28);
         }
 
         .pink-gradient-border {
@@ -226,14 +226,14 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black/75" />
 
-        <div className="absolute top-20 left-1/4 w-72 h-72 rounded-full bg-pink-500/10 blur-3xl animate-glow pointer-events-none" />
+        <div className="absolute top-20 left-1/4 w-72 h-72 rounded-full bg-amber-500/10 blur-3xl animate-glow pointer-events-none" />
 
-        <div className="absolute bottom-10 right-1/4 w-64 h-64 rounded-full bg-pink-400/5 blur-3xl animate-glow pointer-events-none" />
+        <div className="absolute bottom-10 right-1/4 w-64 h-64 rounded-full bg-amber-400/5 blur-3xl animate-glow pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-2xl animate-fade-up">
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-white/10 bg-white/[0.04] text-white/70 text-sm">
-              <span className="w-2 h-2 rounded-full bg-pink-400 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
               Tốc độ siêu nhanh
             </div>
 
@@ -839,7 +839,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 font-bold text-lg">
                 <img
-                  src="/logoastoncloud1.png"
+                  src="/logoastbl.png"
                   alt="Aston Cloud"
                   className="w-8 h-8 object-contain"
                 />

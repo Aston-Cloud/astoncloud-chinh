@@ -49,11 +49,11 @@ const sections: Section[] = [
 ];
 
 const link =
-  "rounded text-pink-700 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600 dark:text-pink-300";
+  "rounded text-amber-700 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 dark:text-amber-300";
 
 export default function CookiePage() {
   return (
-    <div className="min-h-screen bg-pink-50 leading-relaxed text-slate-800 dark:bg-slate-950 dark:text-slate-200">
+    <div className="min-h-screen bg-amber-50 leading-relaxed text-slate-800 dark:bg-slate-950 dark:text-slate-200">
       <Navbar variant="policy" />
 
       <main className="mx-auto max-w-2xl px-5 pb-16 pt-28">
@@ -71,7 +71,7 @@ export default function CookiePage() {
           .
         </p>
 
-        <div className="divide-y divide-pink-100 rounded-xl border border-pink-200 bg-white px-4 shadow-sm sm:px-6 dark:divide-pink-950 dark:border-pink-900 dark:bg-slate-900">
+        <div className="divide-y divide-amber-100 rounded-xl border border-amber-200 bg-white px-4 shadow-sm sm:px-6 dark:divide-amber-950 dark:border-amber-900 dark:bg-slate-900">
           {sections.map((s, i) => (
             <section key={s.title} aria-labelledby={`c-${i}`} className="py-5">
               <h2 id={`c-${i}`} className="mb-2 text-lg font-semibold">

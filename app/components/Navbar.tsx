@@ -27,8 +27,8 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         variant === "policy"
           ? scrolled
-            ? "bg-pink-100/95 backdrop-blur-md border-b border-pink-200 shadow-sm"
-            : "bg-pink-50/95 backdrop-blur-md border-b border-pink-100"
+            ? "bg-amber-100/95 backdrop-blur-md border-b border-amber-200 shadow-sm"
+            : "bg-amber-50/95 backdrop-blur-md border-b border-amber-100"
           : scrolled
             ? "bg-black/85 backdrop-blur-md border-b border-white/10 shadow-lg"
             : "bg-transparent"
@@ -43,7 +43,7 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
           }`}
         >
           <img
-            src="/logoastoncloud1.png"
+            src="/logoastbl.png"
             alt="Aston Cloud"
             className="w-8 h-8 object-contain"
           />
@@ -59,35 +59,35 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
         >
           <Link
             href="#hattang"
-            className={`transition-colors ${variant === "policy" ? "hover:text-pink-700" : "hover:text-white"}`}
+            className={`transition-colors ${variant === "policy" ? "hover:text-amber-700" : "hover:text-amber-300"}`}
           >
             Hạ Tầng
           </Link>
 
           <Link
             href="#panel-preview"
-            className={`transition-colors ${variant === "policy" ? "hover:text-pink-700" : "hover:text-white"}`}
+            className={`transition-colors ${variant === "policy" ? "hover:text-amber-700" : "hover:text-amber-300"}`}
           >
             Panel
           </Link>
 
           <Link
             href="#nodes"
-            className={`transition-colors ${variant === "policy" ? "hover:text-pink-700" : "hover:text-white"}`}
+            className={`transition-colors ${variant === "policy" ? "hover:text-amber-700" : "hover:text-amber-300"}`}
           >
             Cấu Hình
           </Link>
 
           <Link
             href="#about"
-            className={`transition-colors ${variant === "policy" ? "hover:text-pink-700" : "hover:text-white"}`}
+            className={`transition-colors ${variant === "policy" ? "hover:text-amber-700" : "hover:text-amber-300"}`}
           >
             Về Chúng Tôi
           </Link>
 
           <Link
             href="#prides"
-            className={`transition-colors ${variant === "policy" ? "hover:text-pink-700" : "hover:text-white"}`}
+            className={`transition-colors ${variant === "policy" ? "hover:text-amber-700" : "hover:text-amber-300"}`}
           >
             Bảng giá
           </Link>
@@ -99,8 +99,8 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
             href="/panel"
             className={`hidden sm:inline text-sm font-medium transition-colors ${
               variant === "policy"
-                ? "text-slate-700 hover:text-pink-700"
-                : "text-white/70 hover:text-white"
+                ? "text-slate-700 hover:text-amber-700"
+                : "text-white/70 hover:text-amber-300"
             }`}
           >
             Đăng nhập

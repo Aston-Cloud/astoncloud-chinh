@@ -95,7 +95,7 @@ const sections: Section[] = [
 
 export default function TermsPage() {
   return (
-    <div className="min-h-screen bg-pink-50 leading-relaxed text-slate-800 dark:bg-slate-950 dark:text-slate-200">
+    <div className="min-h-screen bg-amber-50 leading-relaxed text-slate-800 dark:bg-slate-950 dark:text-slate-200">
       <Navbar variant="policy" />
 
       <main className="mx-auto max-w-2xl px-5 pb-16 pt-28">
@@ -110,7 +110,7 @@ export default function TermsPage() {
           cùng dịch vụ Hosting &amp; VPS đi kèm. Khi tạo tài khoản hoặc sử dụng dịch vụ, bạn (“Khách hàng”) đồng ý với các điều khoản dưới đây.
         </p>
 
-        <div className="divide-y divide-pink-100 rounded-xl border border-pink-200 bg-white px-4 shadow-sm sm:px-6 dark:divide-pink-950 dark:border-pink-900 dark:bg-slate-900">
+        <div className="divide-y divide-amber-100 rounded-xl border border-amber-200 bg-white px-4 shadow-sm sm:px-6 dark:divide-amber-950 dark:border-amber-900 dark:bg-slate-900">
           {sections.map((s, i) => (
             <section key={s.title} aria-labelledby={`t-${i}`} className="py-5">
               <h2 id={`t-${i}`} className="mb-2 text-lg font-semibold">
